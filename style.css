@@ -26,7 +26,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  border: 1px solid black;
 }
 
 .container header .wrapper {
@@ -35,7 +34,6 @@ body {
   flex-direction: column;
   color: hsl(201, 11%, 66%);
   width: 760px;
-  /* border: 1px solid black; */
 }
 
 .container header .wrapper .logo {
@@ -55,14 +53,17 @@ body {
 .container header .wrapper p {
   text-align: center;
   margin-bottom: 40px;
+  line-height: 1.5;
 }
 
-.container header .wrapper .button {
+.container header .wrapper .button,
+.available-clipboard .button {
   display: flex;
   gap: 15px;
 }
 
-.container header .button button {
+.container header .button button,
+.available-clipboard .button button {
   padding: 12px 30px;
   font-weight: 600;
   color: white;
@@ -70,12 +71,207 @@ body {
   border: none;
 }
 
-.container header .button .ios-btn {
+.container header .button .ios-btn,
+.available-clipboard .button .ios-btn {
   background-color: hsl(171, 66%, 44%);
-  box-shadow: 0px 10px 0px 0px hsla(171, 66%, 44%, 0.1);
+  box-shadow: 0px 10px 0px -5px hsla(171, 66%, 44%, 0.1);
 }
 
-.container header .button .mac-btn {
+.container header .button .mac-btn,
+.available-clipboard .button .mac-btn {
   background-color: hsl(233, 100%, 69%);
-  box-shadow: 0px 10px 0px 0px hsla(233, 100%, 69%, 0.1);
+  box-shadow: 0px 10px 0px -5px hsla(233, 100%, 69%, 0.1);
+}
+/* header end */
+
+.snippets-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.snippets-track h2,
+.snippets-track > p {
+  width: 760px;
+}
+
+.snippets-track h2 {
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.snippets-track > p {
+  text-align: center;
+  line-height: 1.5;
+  color: hsl(201, 11%, 66%);
+}
+
+.snippets-track .grid {
+  display: grid;
+  grid-template-columns: 1fr 760px;
+  margin-top: 40px;
+}
+
+.snippets-track .desktop-img img {
+  display: block;
+}
+
+.snippets-track .desktop-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.snippets-track .desktop-description div {
+  margin-bottom: 30px;
+}
+
+.snippets-track .desktop-description .quick-search,
+.snippets-track .desktop-description .icloud-sync,
+.complete-history {
+  text-align: left;
+  width: 400px;
+}
+
+.snippets-track .desktop-description .quick-search h3,
+.snippets-track .desktop-description .icloud-sync h3,
+.complete-history h3 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+
+.snippets-track .desktop-description .quick-search p,
+.snippets-track .desktop-description .icloud-sync p,
+.complete-history p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.5;
+}
+/* snippets-track end */
+
+.clipboard-snippets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clipboard-snippets h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.clipboard-snippets p {
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 60px;
+  width: 700px;
+  text-align: center;
+  line-height: 1.5;
+}
+/* clipboard-snippets end */
+
+.charge-workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charge-workflow h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.charge-workflow > p {
+  color: hsl(201, 11%, 66%);
+}
+
+.charge-workflow .fitur {
+  display: flex;
+  margin-top: 60px;
+  text-align: center;
+  gap: 20px;
+}
+
+.charge-workflow .fitur div {
+  width: 400px;
+}
+
+.charge-workflow .fitur h3 {
+  color: hsl(210, 10%, 33%);
+  margin: 20px 0 10px 0;
+}
+
+.charge-workflow .fitur p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.5;
+}
+
+.charge-workflow .partner {
+  display: flex;
+  gap: 130px;
+  margin: 150px 0;
+}
+/* charge-workflow end */
+
+.available-clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.available-clipboard h2 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 10px;
+}
+
+.available-clipboard p {
+  width: 700px;
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* available-clipboard end */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+  padding: 20px 150px;
+  position: relative;
+  background-color: hsla(201, 11%, 66%, 0.1);
+}
+
+footer .footer-logo img {
+  width: 50px;
+}
+
+footer .term {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  left: 400px;
+}
+
+footer .term .faqus,
+footer .term .prikit,
+footer .term .install-guide {
+  line-height: 1.5;
+  font-weight: 600;
+  color: hsl(201, 11%, 66%);
+}
+
+footer .socials-media {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
 }
