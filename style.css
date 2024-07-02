@@ -10,7 +10,7 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 .container {
@@ -59,15 +59,15 @@ body {
 .container header .wrapper .button,
 .available-clipboard .button {
   display: flex;
-  gap: 15px;
+  gap: 18px;
 }
 
 .container header .button button,
 .available-clipboard .button button {
-  padding: 12px 30px;
+  padding: 16px 30px;
   font-weight: 600;
   color: white;
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
 }
 
@@ -143,14 +143,14 @@ body {
 
 .snippets-track .desktop-description .quick-search,
 .snippets-track .desktop-description .icloud-sync,
-.complete-history {
+.snippets-track .desktop-description .complete-history {
   text-align: left;
   width: 400px;
 }
 
 .snippets-track .desktop-description .quick-search h3,
 .snippets-track .desktop-description .icloud-sync h3,
-.complete-history h3 {
+.snippets-track .desktop-description .complete-history h3 {
   font-weight: 600;
   color: hsl(210, 10%, 33%);
   margin-bottom: 10px;
@@ -158,7 +158,7 @@ body {
 
 .snippets-track .desktop-description .quick-search p,
 .snippets-track .desktop-description .icloud-sync p,
-.complete-history p {
+.snippets-track .desktop-description .complete-history p {
   color: hsl(201, 11%, 66%);
   line-height: 1.5;
 }
@@ -284,5 +284,245 @@ footer .socials-media {
   gap: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .content {
+    margin: 0 30px;
+  }
+
+  .container header {
+    padding: 0 30px;
+    background-image: url("images/bg-header-mobile.png");
+  }
+
+  .container header .wrapper {
+    width: 100%;
+  }
+
+  .container header .wrapper img {
+    width: 100px;
+  }
+
+  .container header .wrapper h1 {
+    text-align: center;
+  }
+
+  .container header .wrapper .button,
+  .available-clipboard .button {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  /* header end */
+
+  .snippets-track h2,
+  .snippets-track > p {
+    width: 100%;
+  }
+
+  .snippets-track .grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .snippets-track .grid .desktop-img {
+    margin: 30px 0 60px 0;
+  }
+
+  .snippets-track .grid .desktop-img img {
+    width: 100%;
+  }
+
+  .snippets-track .grid .desktop-description {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .snippets-track .desktop-description div {
+    margin-bottom: 50px;
+  }
+
+  .snippets-track .desktop-description .quick-search,
+  .snippets-track .desktop-description .icloud-sync,
+  .snippets-track .desktop-description .complete-history {
+    width: 100%;
+    text-align: center;
+  }
+  /* snippets-track end */
+
+  .clipboard-snippets h2 {
+    text-align: center;
+  }
+
+  .clipboard-snippets p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .clipboard-snippets .devices-img {
+    margin-bottom: 80px;
+  }
+
+  .clipboard-snippets .devices-img img {
+    width: 100%;
+  }
+  /* clipboard-snippets end */
+
+  .charge-workflow h2 {
+    text-align: center;
+  }
+
+  .charge-workflow > p {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .charge-workflow .fitur {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .charge-workflow .fitur div {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .charge-workflow .fitur h3 {
+    margin: 30px 0 20px 0;
+  }
+
+  .charge-workflow .partner {
+    flex-direction: column;
+    gap: 60px;
+    margin: 100px 0;
+  }
+  /* charge-workflow end */
+
+  .available-clipboard h2 {
+    text-align: center;
+  }
+
+  .available-clipboard p {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* available-clipboard end */
+  footer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 30px;
+  }
+
+  footer .footer-logo img {
+    width: 50px;
+  }
+
+  footer .term {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: static;
+    left: 0;
+  }
+
+  footer .term .faqus,
+  footer .term .prikit,
+  footer .term .install-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.2;
+  }
+
+  footer .socials-media {
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1530px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .content {
+    padding: 0 30px;
+  }
+
+  .container header {
+    padding: 0 30px;
+  }
+
+  .container header .wrapper {
+    width: 100%;
+  }
+  /* header end */
+
+  .snippets-track h2,
+  .snippets-track > p {
+    width: 100%;
+  }
+
+  .snippets-track .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+  }
+
+  .snippets-track .desktop-img img {
+    width: 100%;
+  }
+
+  .snippets-track .desktop-description {
+    padding-left: 0;
+  }
+
+  .snippets-track .desktop-description .quick-search,
+  .snippets-track .desktop-description .icloud-sync,
+  .snippets-track .desktop-description .complete-history {
+    width: 100%;
+  }
+
+  /* snippets-track end */
+
+  .clipboard-snippets .devices-img img {
+    width: 100%;
+  }
+  /* clipboard-snippets end */
+
+  .charge-workflow .fitur {
+    width: 100%;
+  }
+
+  .charge-workflow .fitur div {
+    width: 100%;
+  }
+
+  .charge-workflow .partner {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .charge-workflow .partner img {
+    width: 120px;
+  }
+  /* charge-workflow end */
+
+  footer {
+    gap: 70px;
+  }
+
+  footer .term {
+    position: static;
+  }
 }
