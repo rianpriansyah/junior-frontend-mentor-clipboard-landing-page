@@ -271,6 +271,11 @@ footer .term {
   left: 400px;
 }
 
+footer .term p:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
 footer .term .faqus,
 footer .term .prikit,
 footer .term .install-guide {
@@ -282,6 +287,19 @@ footer .term .install-guide {
 footer .socials-media {
   display: flex;
   gap: 20px;
+}
+
+footer .socials-media .facebook svg path:hover {
+  fill: #3b5998;
+  cursor: pointer;
+}
+footer .socials-media .twitter svg path:hover {
+  fill: #1da1f2;
+  cursor: pointer;
+}
+footer .socials-media .instagram svg path:hover {
+  fill: #c32aa3;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
