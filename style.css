@@ -289,16 +289,20 @@ footer .socials-media {
   gap: 20px;
 }
 
-footer .socials-media .facebook svg path:hover {
-  fill: #3b5998;
+footer .socials-media i {
+  font-size: 25px;
+}
+
+footer .socials-media .fa-facebook:hover {
+  color: #3b5998;
   cursor: pointer;
 }
-footer .socials-media .twitter svg path:hover {
-  fill: #1da1f2;
+footer .socials-media .fa-twitter:hover {
+  color: #1da1f2;
   cursor: pointer;
 }
-footer .socials-media .instagram svg path:hover {
-  fill: #c32aa3;
+footer .socials-media .fa-instagram:hover {
+  color: #c32aa3;
   cursor: pointer;
 }
 
